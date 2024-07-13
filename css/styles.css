@@ -1,0 +1,385 @@
+
+* {/*esse * serve pra tipo ler melhor*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* o sizing é uma propriedade CSS que controla como o tamanho total de um elemento
+    é calculado e o tal do box  
+    faz com que o tamanho total do elemento inclua o preenchimento (padding) e a borda, mas não a margem..*/
+}
+
+body {
+    font-family: Arial, sans-serif;/*esse font family  é uma propriedade CSS usada para definir a família de fontes de um elemento.*/
+    background-color: #f0f0f0;
+    min-height: 100vh; /* Garante que o corpo da página tenha altura mínima de 100% da viewport */
+    display: flex; /* Usa flexbox para alinhar verticalmente o conteúdo */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+}
+.container {
+    width: 80%; /* Largura do container principal */
+    margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do Cabeçalho (Header) */
+header {
+    background-color: #1e2b3e; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno */
+    display: flex; /* Usa flexbox para alinhar verticalmente */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+}
+
+.barra-superior {
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-between; /* Distribui os itens uniformemente */
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.conta {
+    text-align: right; /* Alinha texto à direita */
+}
+
+.button-conta {
+    padding: 5px 10px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo */
+    color: #000000; /* Cor do texto */
+    border: 1px solid #1e2b3e; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.button-conta:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #FF5722; /* Cor do texto ao passar o mouse */
+}
+
+.logo {
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.logo h1 {
+    margin: 10px 0; /* Margem superior e inferior do título */
+}
+.logo img{
+    width: 300px;
+    height: 100px;
+}
+
+/* Estilos do Formulário de Busca */
+.container-de-busca {
+    text-align: center; /* Alinha texto ao centro */
+    margin-top: 20px; /* Margem superior */
+}
+
+.container-de-busca form {
+    display: inline-block; /* Exibe o formulário em linha */
+}
+
+.container-de-busca input[type="text"] {
+    padding: 10px; /* Espaçamento interno */
+    width: 300px; /* Largura do campo de busca */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    margin-right: 10px; /* Margem direita */
+}
+
+.container-de-busca button {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.container-de-busca button:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+/* Estilos da Navegação (Nav) */
+nav {
+    background-color: #1e2b3e; /* Cor de fundo */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+.links-de-navegacao {
+    list-style-type: none; /* Remove marcadores de lista */
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-around; /* o justfy ali é uma propriedade CSS usada 
+    em contêineres flexíveis para alinhar itens ao longo do eixo principal. */ 
+    margin-top: 10px; /* Margem superior */
+}
+
+.links-de-navegacao li {
+    margin-left: 20px; /* Margem esquerda */
+}
+
+.links-de-navegacao li a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #fff; /* Cor do texto */
+    transition: color 0.3s ease; /* Transição suave de cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.links-de-navegacao li a:hover {
+    color: #FF5722; /* Cor do texto ao passar o mouse */
+}
+
+
+/* Estilos do Hero Section */
+.hero {
+    background-color: #1e2b3e; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinha texto ao centro */
+    padding: 80px 0; /* Espaçamento interno */
+}
+
+.hero h2 {
+    margin-bottom: 20px; /* Margem inferior do título */
+}
+
+.button {
+    background-color: #1e2b3e; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave de cor */
+    margin-top: 10px; /* Margem superior */
+}
+
+.button:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #FF5722; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos da Seção de Características */
+.caracteristicas {
+    padding: 80px 0; /* Espaçamento interno */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.caracteristica {
+    margin-bottom: 40px; /* Margem inferior */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.caracteristica h3 {
+    margin-bottom: 20px; /* Margem inferior do título */
+    color: #1e2b3e; /* Cor do texto */
+}
+
+.imagens-caracteristicas {
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: center; /* Alinha itens ao centro */
+    flex-wrap: wrap; /* Permite quebrar linha */
+}
+
+.imagem-caracteristicas {
+    margin: 0 10px; /* Margem externa */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.imagem-caracteristica img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+}
+
+.caracteristicas a {
+    color: #1e2b3e; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Exibe em bloco em linha */
+    margin-top: 10px; /* Margem superior */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.caracteristicas a:hover {
+    color: #FF5722; /* Cor do texto ao passar o mouse */
+}
+
+/*Seção de Imagens Médias*/
+.imagens-medias {
+    background-color: #fff; /* Cor de fundo */
+    padding: 80px 0; /* Espaçamento interno */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.imagens-medias h2 {
+    margin-bottom: 20px; /* Margem inferior do título */
+}
+
+.galeria-imagens-medias {
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-around; /* Distribui itens uniformemente */
+    flex-wrap: wrap; /* Permite quebrar linha */
+}
+
+.imagem-media {
+    margin-bottom: 30px; /* Margem inferior */
+    flex-basis: 30%; /* Largura flexível */
+    border: 1px solid #ddd; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    overflow: hidden; /* Oculta conteúdo que extrapola */
+    position: relative; /* Posição relativa */
+}
+
+.imagem-media img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.imagem-media:hover img {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+.imagem-media p {
+    background-color: rgba(30, 43, 62, 0.8); /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    position: absolute; /* Posição absoluta */
+    bottom: 0; /* Alinha ao rodapé */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    margin: 0; /* Margem zero */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Considera borda e preenchimento */
+    opacity: 0; /* Opacidade inicial */
+    transition: opacity 0.3s ease; /* Transição suave de opacidade */
+}
+
+.imagem-media:hover p {
+    opacity: 1; /* Opacidade ao passar o mouse */
+}
+
+/* Estilos da Seção de Preços */
+.precos {
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 80px 0; /* Espaçamento interno */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.precos h2 {
+    margin-bottom: 20px; /* Margem inferior do título */
+    color: #1e2b3e; /* Cor do texto */
+}
+
+.tabela-preco{
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Colapso de borda da tabela */
+    margin-top: 20px; /* Margem superior */
+}
+
+.tabela-preco th, .price-table td {
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Alinha texto ao centro */
+    border-bottom: 1px solid #ddd; /* Borda inferior */
+}
+
+.tabela-preco th {
+    background-color: #1e2b3e; /* Cor de fundo do cabeçalho da tabela */
+    color: #fff; /* Cor do texto do cabeçalho */
+}
+
+.tabela-preco td {
+    background-color: #fff; /* Cor de fundo das células */
+    padding: 15px 0;
+}
+
+.tabela-preco .highlight {
+    background-color: #FF5722; /* Cor de fundo destacada */
+    color: #fff; /* Cor do texto */
+}
+
+.tabela-preco .highlight:hover {
+    background-color: #1e2b3e; /*Cor de fundo ao passar o mouse*/
+}
+
+.servicos {
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 80px 0; /* Espaçamento interno */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+.servicos h2 {
+    margin-bottom: 20px; /* Margem inferior do título */
+    color: #1e2b3e; /* Cor do texto */
+}
+
+.tabela-servicos{
+    width: 100%; /* Largura total */
+    border-collapse: collapse; /* Colapso de borda da tabela */
+    margin-top: 20px; /* Margem superior */
+}
+
+.tabela-servico th, .price-table td {
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Alinha texto ao centro */
+    border-bottom: 1px solid #ddd; /* Borda inferior */
+}
+
+.tabela-servico th {
+    background-color: #1e2b3e; /* Cor de fundo do cabeçalho da tabela */
+    color: #fff; /* Cor do texto do cabeçalho */
+}
+
+.tabela-servico td {
+    background-color: #fff; /* Cor de fundo das células */
+
+}
+
+.tabela-servico .highlight {
+    background-color: #FF5722; /* Cor de fundo destacada */
+    color: #fff; /* Cor do texto */
+}
+
+.tabela-servico .highlight:hover {
+    background-color: #1e2b3e; /*Cor de fundo ao passar o mouse*/
+}
+
+/* Estilos da Seção de Galeria */
+.galeria {
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 80px 0; /*Espaçamento interno*/
+    text-align: center; /*Alinha texto ao centro*/
+}
+
+.galeria h2 {
+    margin-bottom: 20px; /* Margem inferior do título */
+    color: #1e2b3e; /* Cor do texto */
+}
+
+.imagens-galeria {
+    display: flex; /* Usa flexbox para alinhar itens */
+    justify-content: space-around; /* Distribui itens uniformemente */
+    flex-wrap: wrap; /* Permite quebrar linha */
+}
+
+.item-galeria {
+    margin-bottom: 30px; /* Margem inferior */
+    flex-basis: 30%; /* Largura flexível */
+}
+
+.item-galeria img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #1e2b3e; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinha texto ao centro */
+    padding: 20px 0; /* Espaçamento interno*/
+    margin-top: auto; /*Margem superior automática*/
+}
+
+footer p {
+    margin: 5px 0; /*Margem do parágrafo*/
+}
